@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @RestController
 public class InventoryController {
 
@@ -25,8 +24,17 @@ public class InventoryController {
     }
 
     @PostMapping("/inventory")
-    public Inventory inventory(@RequestBody Inventory inventory){
+    public Inventory inventory(@RequestBody Inventory inventory) {
         return inventoryRepository.save(inventory);
+    }
+
+    @GetMapping("/delete/{id}")
+    public void delelem(@PathVariable Long id) {
+        try {
+            inventoryRepository.deleteById(id);
+        } catch (Exception e) {
+            throw new InventoryNotFoundException(id);
+        }
     }
 
 }
