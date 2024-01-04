@@ -1,9 +1,14 @@
 package com.thwildau.inventory;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class InventoryController {
@@ -37,4 +42,11 @@ public class InventoryController {
         }
     }
 
+    @GetMapping("/inventory/location/{location}")
+    List<Inventory> allByLocation(@PathVariable String location) {
+        var theProbe = new Inventory();
+        theProbe.setLocation(location);
+        var theExample = Example.of(theProbe);
+        return inventoryRepository.findAll(theExample);
+    }
 }
