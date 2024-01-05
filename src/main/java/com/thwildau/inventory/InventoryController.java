@@ -39,7 +39,7 @@ public class InventoryController {
     public void delelem(@PathVariable Long id) {
 
         inventoryRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new InventoryNotFoundException(id));
 
         inventoryRepository.deleteById(id);
     }
