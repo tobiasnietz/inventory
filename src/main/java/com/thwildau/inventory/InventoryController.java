@@ -38,7 +38,7 @@ public class InventoryController {
         return inventoryRepository.save(inventory);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/inventory/{id}")
     public void delelem(@PathVariable Long id) {
 
         inventoryRepository.findById(id)
