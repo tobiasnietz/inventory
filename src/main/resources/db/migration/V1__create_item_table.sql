@@ -1,7 +1,0 @@
-CREATE TABLE items
-(
-    id INTEGER PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    desc VARCHAR(255) NOT NULL,
-    location VARCHAR(255) NOT NULL
-);
