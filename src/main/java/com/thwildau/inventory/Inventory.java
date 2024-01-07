@@ -3,6 +3,7 @@ package com.thwildau.inventory;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Inventory {
@@ -10,7 +11,11 @@ public class Inventory {
     @Id
     @GeneratedValue
     private Long id;
+
+    @NotBlank(message = "Name is mandatory")
     private String name;
+
+    @NotBlank(message = "Location is mandatory")
     private String location;
 
     public Inventory(){}
