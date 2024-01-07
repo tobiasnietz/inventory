@@ -10,8 +10,12 @@ The project is an inventory filled with objects of type Inventory. You can perfo
 ### General Info
 ***
 The project is at the state that all basic HTTP methods, i.e. PUT, POST, GET and DELETE, are implemented. This enables the functions, adding, updating and deleting objects, as well as querying the objects for their ID and location. The objects are stored in an h2 database. Each object has a name, an ID and a location. 
-### Link to Swagger
-[Swagger](http://localhost:8080/swagger-ui/index.html#/)
+### Swagger
+***
+
+When the server is running, you can view the endpoints via Swagger
+
+[Swagger Link](http://localhost:8080/swagger-ui/index.html#/)
 
 ## Technologies
 ***
