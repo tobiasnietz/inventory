@@ -11,7 +11,7 @@ The project is an inventory filled with objects of type Inventory. You can perfo
 ***
 The project is at the state that all basic HTTP methods, i.e. PUT, POST and GET, are implemented. This enables the functions, adding, updating and deleting objects, as well as querying the objects for their ID and location. The objects are stored in the database that runs on Docker and PostgreSQL.
 ### Screenshot
-![Swagger]("C:\Users\annel\OneDrive\Bilder\Screenshots\Swagger.png")
+![Swagger](https://github.com/tobiasnietz/inventory/blob/9df5fd1e4225cba9293cf61a09d38f724c513a99/ScreenShots/Swagger.png)
 
 ## Technologies
 ***
