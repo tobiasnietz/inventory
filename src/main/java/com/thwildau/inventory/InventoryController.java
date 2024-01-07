@@ -39,12 +39,12 @@ public class InventoryController {
 
     @PostMapping("/inventory")
     @ResponseStatus(HttpStatus.CREATED)
-    public Inventory inventory(@Valid @RequestBody Inventory inventory) {
+    public Inventory newInventory(@Valid @RequestBody Inventory inventory) {
         return inventoryRepository.save(inventory);
     }
 
     @DeleteMapping("/inventory/{id}")
-    public void delelem(@PathVariable Long id) {
+    public void deleteInventory(@PathVariable Long id) {
 
         inventoryRepository.findById(id)
                 .orElseThrow(() -> new InventoryNotFoundException(id));

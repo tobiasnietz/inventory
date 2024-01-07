@@ -103,7 +103,7 @@ class InventoryControllerTest {
     }
 
     @Test
-    void replaceInventoryBadRequest() throws Exception{
+    void updateInventoryBadRequest() throws Exception{
         String item = "{\"name\": \"\", \"location\" : \"\"}";
         mvc.perform(MockMvcRequestBuilders
                         .put("/inventory/1")
@@ -114,7 +114,7 @@ class InventoryControllerTest {
     }
 
     @Test
-    void replaceInventoryNotFound() throws Exception {
+    void updateInventoryNotFound() throws Exception {
         String item = "{\"name\": \"Product 13 Updated\", \"location\" : \"Muenchen Updated\"}";
         mvc.perform(MockMvcRequestBuilders
                         .put("/inventory/13")
