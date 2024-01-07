@@ -16,6 +16,9 @@ When the server is running, you can view the endpoints via Swagger
 
 [Swagger Link](http://localhost:8080/swagger-ui/index.html#/)
 
+###Screen Swagger
+![Swagger](https://github.com/tobiasnietz/inventory/blob/38a4bf94ba15d4e142e5e4e88a220479e8a01903/ScreenShots/Swagger.png)
+
 ## Technologies
 ***
 A list of technologies used within the project:
