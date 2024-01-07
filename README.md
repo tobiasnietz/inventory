@@ -9,11 +9,9 @@ The project is an inventory filled with objects of type Inventory. You can perfo
 
 ### General Info
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-
 The project is at the state that all basic HTTP methods, i.e. PUT, POST and GET, are implemented. This enables the functions, adding, updating and deleting objects, as well as querying the objects for their ID and location. The objects are stored in the database that runs on Docker and PostgreSQL.
 ### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+![Swagger]("C:\Users\annel\OneDrive\Bilder\Screenshots\Swagger.png")
 
 ## Technologies
 ***
@@ -28,18 +26,8 @@ A list of technologies used within the project:
 ***
 A little intro about the installation. 
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
 * the technologies listed above should be installed
 * start your development environment
 * open the folder with the project
 * now you can use it
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-
-
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+```
