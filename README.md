@@ -9,22 +9,33 @@ The project is an inventory filled with objects of type Inventory. You can perfo
 
 ### General Info
 ***
-The project is at the state that all basic HTTP methods, i.e. PUT, POST, GET and DELETE, are implemented. This enables the functions, adding, updating and deleting objects, as well as querying the objects for their ID and location. The functions are accessed via Swagger. The objects are stored in an h2 database. Each object has a name, an ID and a location. 
-### Screenshot
-![Swagger](https://github.com/tobiasnietz/inventory/blob/38a4bf94ba15d4e142e5e4e88a220479e8a01903/ScreenShots/Swagger.png)
+The project is at the state that all basic HTTP methods, i.e. PUT, POST, GET and DELETE, are implemented. This enables the functions, adding, updating and deleting objects, as well as querying the objects for their ID and location. The objects are stored in an h2 database. Each object has a name, an ID and a location. 
+### Link to Swagger
+[Swagger](http://localhost:8080/swagger-ui/index.html#/)
 
 ## Technologies
 ***
 A list of technologies used within the project:
 * [Gradle](https://gradle.org/install/): Version 8.5
-* [Spring](https://spring.io/): Version 3.2.1
-* [Java](https://www.java.com/de/download/manual.jsp): Version 8.391
+* [Spring Boot](https://spring.io/): Version 3.2.1
+* [Java](https://www.java.com/de/download/manual.jsp): Version 17
 
-## Installation
+## Dependencies
 ***
-A little intro about the installation. 
+There are a number of dependencies used in the project. Browse the build.gradle file for details of libraries and versions used.
 
-* the technologies listed above should be installed
-* start your development environment
-* open the folder with the project
-* now you can use it
+## Building the Project
+***
+
+* ./gradlew bootrun
+
+## Execute the integration tests
+***
+
+* ./gradlew test
+
+## Curl Example
+***
+
+* curl -X GET http://localhost:8080/inventory
+
