@@ -26,9 +26,8 @@ A list of technologies used within the project:
 ## Installation
 ***
 A little intro about the installation. 
-```
+
 * the technologies listed above should be installed
 * start your development environment
 * open the folder with the project
 * now you can use it
-```
