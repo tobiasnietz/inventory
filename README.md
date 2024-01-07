@@ -13,7 +13,7 @@ The project is at the state that all basic HTTP methods, i.e. PUT, POST and GET,
 
 
 ### Screenshot
-![Swagger](https://github.com/tobiasnietz/inventory/blob/9df5fd1e4225cba9293cf61a09d38f724c513a99/ScreenShots/Swagger.png)
+![Swagger](https://github.com/tobiasnietz/inventory/blob/38a4bf94ba15d4e142e5e4e88a220479e8a01903/ScreenShots/Swagger.png)
 
 ## Technologies
 ***
