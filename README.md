@@ -10,6 +10,8 @@ The project is an inventory filled with objects of type Inventory. You can perfo
 ### General Info
 ***
 The project is at the state that all basic HTTP methods, i.e. PUT, POST and GET, are implemented. This enables the functions, adding, updating and deleting objects, as well as querying the objects for their ID and location. The objects are stored in the database that runs on Docker and PostgreSQL.
+
+
 ### Screenshot
 ![Swagger](https://github.com/tobiasnietz/inventory/blob/9df5fd1e4225cba9293cf61a09d38f724c513a99/ScreenShots/Swagger.png)
 
@@ -17,7 +19,6 @@ The project is at the state that all basic HTTP methods, i.e. PUT, POST and GET,
 ***
 A list of technologies used within the project:
 * [Docker](https://docs.docker.com/desktop/release-notes/): Version 4.26.1
-* [PostgreSQL](https://www.postgresql.org/download/): Version 16.1
 * [Gradle](https://gradle.org/install/): Version 8.5
 * [Spring](https://spring.io/): Version 3.2.1
 * [Java](https://www.java.com/de/download/manual.jsp): Version 8.391
