@@ -15,8 +15,8 @@ class DatabaseLoader {
     CommandLineRunner initDatabase(InventoryRepository repository) {
 
         return args -> {
-            log.info("Preloading " + repository.save(new Inventory("Bilbo Baggins", "burglar")));
-            log.info("Preloading " + repository.save(new Inventory("Frodo Baggins", "thief")));
+            log.info("Preloading " + repository.save(new Inventory("Product 1", "Berlin")));
+            log.info("Preloading " + repository.save(new Inventory("Product 2", "Dresden")));
         };
     }
 }
