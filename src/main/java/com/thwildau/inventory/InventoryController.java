@@ -54,7 +54,7 @@ public class InventoryController {
     }
 
     @PutMapping("/inventory/{id}")
-    public ResponseEntity<Inventory> updateInventory(@PathVariable Long id, @RequestBody Inventory inventory) {
+    public ResponseEntity<Inventory> updateInventory(@PathVariable Long id, @Valid @RequestBody Inventory inventory) {
         var updateInventory = inventoryRepository.findById(id)
                 .orElseThrow(() -> new InventoryNotFoundException(id));
         
